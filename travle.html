@@ -84,23 +84,19 @@
 		}
 
 		article {
-			width: 100%;
-			height: 100%;
-			/* 높이를 명시적으로 설정 */
-			margin-bottom: auto;
+			width: calc(33.33% - 5px);
+			/* 각 사진의 너비를 3등분 */
+			margin-bottom: 5px;
+			/* 아래쪽 여백 추가 */
 			background: #f0f0f0;
 			box-sizing: border-box;
 			text-align: center;
-			overflow: hidden;
-			/* article 영역을 넘는 콘텐츠 숨김 */
 		}
 
 		article img {
 			max-width: 100%;
-			max-height: 100%;
-			/* 이미지 높이를 article의 높이에 맞춤 */
-			object-fit: cover;
-			/* 이미지를 영역에 맞게 자르기 */
+			/* 이미지 크기를 article에 맞게 조정 */
+			height: 185px;
 			display: block;
 		}
 
@@ -142,13 +138,19 @@
 		<nav>
 			<ul class="nav justify-content-center">
 				<li class="nav-item">
-					<a class="nav-link active" aria-current="page" href="index.html" style="color: gray;">Home</a>
+					<a class="nav-link active" aria-current="page" href="index.html">
+						<button id="homeB" type="button" class="btn">Home</button>
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" style="color: gray;">Question</a>
+					<a class="nav-link">
+						<button id="questionB" type="button" class="btn">Question</button>
+					</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="#" style="color: gray;">Setting</a>
+					<a class="nav-link">
+						<button id="settingB" type="button" class="btn">Setting</button>
+					</a>
 				</li>
 			</ul>
 		</nav>
@@ -159,6 +161,21 @@
 			<section>
 				<article class="a1">
 					<img src="image/bedroom.png" alt="bedroom" />
+				</article>
+				<article class="a2">
+					<img src="image/water1.png" alt="water" />
+				</article>
+				<article class="a3">
+					<img src="image/pool1.png" alt="pool" />
+				</article>
+				<article class="a4">
+					<img src="image/cloud.png" alt="cloud">
+				</article>
+				<article class="a5">
+					<img src="image/sapi-island.png" alt="sapi-island">
+				</article>
+				<article class="a6">
+					<img src="image/sunset.png" alt="sumset">
 				</article>
 			</section>
 		</div>
